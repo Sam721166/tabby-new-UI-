@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+/* circle that will appear first and help in toggling on and off the page */
+.circle {
+    background-color: #7e05ff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+/* warpper of the page */
+
+section {
+    /* background-color: #fff7ed; */
+    background: #ffffff;
+background: linear-gradient(179deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 0%, rgb(217, 140, 255) 100%, rgba(255, 0, 0, 0) 0%);
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+
+/* search bar  */
+div.search {
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9900ff5a;
+    
+}
+
+div>input {
+    border: 2px solid rgb(178, 71, 255);
+    width: 500px;
+    height: 35px;
+    border-radius: 20px;
+    text-align: center;
+    outline: none;
+}
+div>input:focus{
+    border: 2px solid rgb(144, 0, 255);
+    width: 700px;
+    transition: all 0.3s linear;
+}
+
+
+
+/* wrapper of all the tabs  */
+.allTabs {
+    width: 100vw;
+    display: flex;
+    padding-top: 40px;
+    padding-right: 100px;
+    padding-left: 100px;
+    min-height: 40vh;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* tab which contains all the tab's information */
+
+.tab {
+    display: inline-block;
+    padding: 4px;
+    box-shadow: 0px 0px 5px 0px #0000001f;
+    border-radius: 12px;
+    border: rgb(201, 107, 255) solid 2px;
+    
+}
+.tab:hover{
+    transition: all 0.1s linear;
+    background-color: rgb(195, 0, 255);
+    border: rgb(173, 1, 216) solid 2px;
+    box-shadow: 0px 0px 2px 0px rgb(129, 129, 129);
+    
+}
+
+
+.tab>a {
+    text-decoration: none;
+    color: black;
+    
+
+}
+.tab>a:hover{
+    color: rgb(255, 255, 255);
+}
+
+
+.tab h1 {
+    border-left: 1px solid rgb(0, 0, 0);
+    padding: 4px 4px 4px 12px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.tab .url {
+    margin: 10px 4px 4px 10px;
+    color: rgb(123, 0, 255);
+    width: 150px;
+    height: 8px;
+    font-size: 8px;
+    overflow: hidden;
+    text-decoration: underline;
+}
+
+
+p.type {
+    border-radius: 12px;
+    /* border: 1px solid black; */
+    color: rgb(174, 0, 255);
+    padding: 2px 6px;
+    display: inline-block;
+    margin: 4px 10px;
+    font-size: 8px;
+    display: none;
+}
